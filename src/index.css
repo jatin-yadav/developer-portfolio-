@@ -46,3 +46,9 @@
   --color-secondary: 0deg 0% 33%;
   --color-accent1: 0deg 0% 42%;
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

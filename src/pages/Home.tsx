@@ -2,6 +2,7 @@ import { twitterIcon, linkedInIcon, githubIcon, leetCodeIcon, emailIcon } from "
 import { useRecoilValue } from "recoil";
 import { themesAtom } from "../store/atoms/themesAtom";
 import RunningText from "../components/RunningText";
+import { Button } from "@/components/ui/button";
 
 
 
@@ -26,6 +27,9 @@ const Home = () => {
                 <div className="mx-5 text-foreground font-semibold">ENGINEER</div>
                 <div className="bg-primary h-2 w-2 origin-center rotate-45"></div>
                 <div className="mx-5 text-foreground font-semibold">VISIONARY</div>
+              </div>
+              <div className="pt-20">
+                <Button>Resume</Button>
               </div>
             </div>
             <div className="absolute bottom-[50px] flex justify-center items-center gap-4 w-full">
