@@ -8,6 +8,7 @@ import { MenuIcon } from "./icons/Menu";
 import moonIcon from "./icons/moon.png";
 import sunIcon from "./icons/sun.png";
 import twitterIcon from "./icons/twitter-icon.png";
+import aboutImg from "./illustrations/about.svg";
 
 export {
   logo,
@@ -20,4 +21,5 @@ export {
   moonIcon,
   sunIcon,
   twitterIcon,
+  aboutImg,
 };
