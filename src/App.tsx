@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useThemeSelector } from "./hooks/useThemeSelector";
-import Navbar from "./components/NavBar";
 import { BrowserRouter } from 'react-router-dom'
 import { useRecoilValue } from "recoil";
 import { themesAtom } from "./store/atoms/themesAtom";
 
+import Navbar from "./components/NavBar";
+import Home from "./pages/Home"
 
 function App() {
   // const [theme, setTheme] = useState('');
@@ -28,8 +29,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <main className="h-screen bg-background-1">
+        <main>
           <Navbar />
+          <Home />
         </main>
         <div className="h-screen bg-background-1 text-content">d</div>
       </BrowserRouter>

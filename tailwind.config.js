@@ -15,6 +15,9 @@ export default {
         primary: "hsl(var(--color-primary) / <alpha-value>)",
         secondary: "hsl(var(--color-secondary) / <alpha-value>)",
       },
+      backgroundImage: {
+        "hero-pattern": "url('/src/assets/backgrounds/bg_1.png')",
+      },
     },
   },
   plugins: [],
