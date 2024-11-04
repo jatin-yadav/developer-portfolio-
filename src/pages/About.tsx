@@ -10,8 +10,8 @@ const About = () => {
     const theme = useRecoilValue(themesAtom)
     return (
         <section id='about'>
-            <div className={`${styles.paddingX} flex items-center justify-center pt-12 bg-background-1`}>
-                <div className="max-w-7xl flex flex-col sm:flex-row justify-center items-center gap-4">
+            <div className={`${styles.paddingX} ${styles.paddingY} bg-background-1 flex items-center justify-center`}>
+                <div className="max-w-7xl flex flex-col sm:flex-row justify-center items-center  pt-16 gap-4">
                     <div className="w-full lg:w-5/12">
                         <div className={`${theme === 'dark' ? 'bg-primary' : ""} rounded-md w-96`}>
                             <img src={aboutImg} alt="aboutImg" />

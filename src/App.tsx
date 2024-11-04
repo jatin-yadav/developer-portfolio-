@@ -34,7 +34,7 @@ function App() {
           <Navbar />
           <Home />
           <About />
-          <div className="h-screen bg-background-1"></div>
+          {/* <div className="h-screen bg-background-1"></div> */}
         </main>
       </BrowserRouter>
     </>
