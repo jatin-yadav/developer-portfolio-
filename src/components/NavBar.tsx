@@ -15,16 +15,12 @@ const navLinks = [
     title: "Skills",
   },
   {
-    id: "resume",
-    title: "Resume",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "work",
     title: "Work",
-  },
-  {
-    id: "projects",
-    title: "Projects",
   },
   {
     id: "blog",
@@ -33,6 +29,10 @@ const navLinks = [
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "resume",
+    title: "Resume",
   },
 ];
 

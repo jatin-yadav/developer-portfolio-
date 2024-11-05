@@ -8,6 +8,7 @@ import Navbar from "./components/NavBar";
 import Home from "./pages/Home"
 import About from "./pages/About";
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 
 function App() {
   // const [theme, setTheme] = useState('');
@@ -36,7 +37,7 @@ function App() {
           <Home />
           <About />
           <Skills />
-          {/* <div className="h-screen bg-background-1"></div> */}
+          <Projects />
         </main>
       </BrowserRouter>
     </>

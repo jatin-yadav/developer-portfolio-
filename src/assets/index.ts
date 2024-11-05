@@ -21,6 +21,9 @@ import reactjsLogo from "./tech/reactjs.png";
 import reduxLogo from "./tech/redux.png";
 import tailwindLogo from "./tech/tailwind.png";
 import typescriptLogo from "./tech/typescript.png";
+import project1 from "./projects/carrent.png";
+import project2 from "./projects/jobit.png";
+import project3 from "./projects/tripguide.png";
 
 export {
   logo,
@@ -46,4 +49,7 @@ export {
   reduxLogo,
   tailwindLogo,
   typescriptLogo,
+  project1,
+  project2,
+  project3,
 };
