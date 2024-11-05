@@ -11,6 +11,10 @@ const navLinks = [
     title: "About",
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+  {
     id: "resume",
     title: "Resume",
   },
@@ -158,14 +162,15 @@ const Navbar = () => {
               {navLinks.map((Link) => (
                 <li
                   key={Link.id}
-                  className={`${active === Link.title ? "text-content" : "text-accent-1"
-                    }  font-poppins font-medium cursor-pointer text-[18px] border-b border-b-secondary w-full flex justify-center items-center py-1`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(Link.title);
-                  }}
                 >
-                  <a href={`#${Link.id}`}>{Link.title}</a>
+                  <a
+                    className={`${active === Link.title ? "text-content" : "text-accent-1"
+                      }  font-poppins font-medium cursor-pointer text-[18px] border-b border-b-secondary w-full flex justify-center items-center py-1`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(Link.title);
+                    }}
+                    href={`#${Link.id}`}>{Link.title}</a>
                 </li>
               ))}
             </ul>

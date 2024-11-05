@@ -7,6 +7,7 @@ import { themesAtom } from "./store/atoms/themesAtom";
 import Navbar from "./components/NavBar";
 import Home from "./pages/Home"
 import About from "./pages/About";
+import Skills from "./pages/Skills";
 
 function App() {
   // const [theme, setTheme] = useState('');
@@ -34,6 +35,7 @@ function App() {
           <Navbar />
           <Home />
           <About />
+          <Skills />
           {/* <div className="h-screen bg-background-1"></div> */}
         </main>
       </BrowserRouter>
