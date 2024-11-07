@@ -1,3 +1,5 @@
+import { ShareIcon } from './icons/ShareIcon';
+import { GithubIcon } from './icons/GithubIcon';
 import logo from "./logo/logo.png";
 import { CloseIcon } from "./icons/Close";
 import emailIcon from "./icons/email.png";
@@ -52,4 +54,6 @@ export {
   project1,
   project2,
   project3,
+  ShareIcon,
+  GithubIcon
 };
