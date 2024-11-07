@@ -9,12 +9,12 @@ const ProjectDisplay = ({ revers, projectImg }: { revers: boolean, projectImg: s
     if (revers) {
         return (
             <>
-                <div className="flex lg:flex-row flex-col-reverse gap-8 py-8 px-2 rounded-xl bg-accent-1 my-4">
+                <div className={`flex lg:flex-row flex-col-reverse gap-8 lg:py-6 py-2 lg:px-4 px-2 rounded-xl lg:bg-gradient-to-r bg-gradient-to-b ${theme == 'light' ? "from-[#d3c2af] to-[#fbf3e6]" : "from-slate-400 to-slate-800"} my-4`}>
                     <div className="w-full lg:w-6/12 flex flex-col justify-center">
                         <p>Featured  Project</p>
                         <h1 className="md:text-3xl text-2xl font-bold">Example Project</h1>
                         <div className="py-4">
-                            <div className="lg:p-4 p-2  rounded-md bg-gradient-to-r from-background-2">
+                            <div className="lg:p-4 p-2  rounded-md lg:bg-gradient-to-r bg-gradient-to-b from-background-2 to-slate-400">
                                 A web app for visualizing personalized Spotify data. View your
                                 top artists, top tracks, recently played tracks, and detailed audio
                                 information about each track. Create and save new playlists of
@@ -51,7 +51,7 @@ const ProjectDisplay = ({ revers, projectImg }: { revers: boolean, projectImg: s
     }
     return (
         <>
-            <div className="flex lg:flex-row flex-col gap-8 py-8 px-2 rounded-xl bg-accent-1 my-4">
+            <div className={`flex lg:flex-row flex-col gap-8 lg:py-6 py-2 lg:px-4 px-2 rounded-xl lg:bg-gradient-to-r bg-gradient-to-b ${theme == 'light' ? "from-[#d3c2af] to-[#fbf3e6]" : "from-slate-400 to-slate-800"} my-4`}>
                 <div className="w-full h-fit xl:w-6/12 rounded-xl md:p-4 p-2 bg-black">
                     <img src={projectImg} alt={`${revers}`} />
                 </div>
@@ -59,7 +59,7 @@ const ProjectDisplay = ({ revers, projectImg }: { revers: boolean, projectImg: s
                     <p>Featured  Project</p>
                     <h1 className="md:text-3xl text-2xl font-bold">Example Project</h1>
                     <div className="py-4">
-                        <div className="lg:p-4 p-2  rounded-md bg-gradient-to-r from-background-2">
+                        <div className="lg:p-4 p-2  rounded-md lg:bg-gradient-to-r bg-gradient-to-b from-background-2 to-slate-400">
                             A web app for visualizing personalized Spotify data. View your
                             top artists, top tracks, recently played tracks, and detailed audio
                             information about each track. Create and save new playlists of

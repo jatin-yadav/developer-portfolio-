@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Work from "./pages/Work";
 
 function App() {
   // const [theme, setTheme] = useState('');
@@ -38,6 +39,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <Work />
         </main>
       </BrowserRouter>
     </>
