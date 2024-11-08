@@ -11,6 +11,9 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Work from "./pages/Work";
 import Blog from "./pages/Blog";
+// import Testimonials from "./pages/Testimonials";
+import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   // const [theme, setTheme] = useState('');
@@ -42,6 +45,9 @@ function App() {
           <Projects />
           <Work />
           <Blog />
+          {/* <Testimonials /> */}
+          <Contact />
+          <Footer />
         </main>
       </BrowserRouter>
     </>

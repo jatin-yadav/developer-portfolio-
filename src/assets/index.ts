@@ -1,12 +1,14 @@
 import { ShareIcon } from "./icons/ShareIcon";
 import { GithubIcon } from "./icons/GithubIcon";
-import logo from "./logo/logo.png";
+import { MailIcon } from "./icons/MailIcon";
+import { CopyIcon } from "./icons/Copy";
 import { CloseIcon } from "./icons/Close";
+import { MenuIcon } from "./icons/Menu";
+import logo from "./logo/logo.png";
 import emailIcon from "./icons/email.png";
 import githubIcon from "./icons/github.png";
 import leetCodeIcon from "./icons/leetCode.png";
 import linkedInIcon from "./icons/linkedin.png";
-import { MenuIcon } from "./icons/Menu";
 import moonIcon from "./icons/moon.png";
 import sunIcon from "./icons/sun.png";
 import twitterIcon from "./icons/twitter-icon.png";
@@ -70,4 +72,6 @@ export {
   blog1,
   blog2,
   blog3,
+  MailIcon,
+  CopyIcon,
 };
