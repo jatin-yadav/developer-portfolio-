@@ -1,5 +1,5 @@
-import { ShareIcon } from './icons/ShareIcon';
-import { GithubIcon } from './icons/GithubIcon';
+import { ShareIcon } from "./icons/ShareIcon";
+import { GithubIcon } from "./icons/GithubIcon";
 import logo from "./logo/logo.png";
 import { CloseIcon } from "./icons/Close";
 import emailIcon from "./icons/email.png";
@@ -26,6 +26,10 @@ import typescriptLogo from "./tech/typescript.png";
 import project1 from "./projects/carrent.png";
 import project2 from "./projects/jobit.png";
 import project3 from "./projects/tripguide.png";
+import metaIcon from "./company/meta.png";
+import shopifyIcon from "./company/shopify.png";
+import starbucksIcon from "./company/starbucks.png";
+import teslaIcon from "./company/tesla.png";
 
 export {
   logo,
@@ -55,5 +59,9 @@ export {
   project2,
   project3,
   ShareIcon,
-  GithubIcon
+  GithubIcon,
+  metaIcon,
+  shopifyIcon,
+  starbucksIcon,
+  teslaIcon,
 };

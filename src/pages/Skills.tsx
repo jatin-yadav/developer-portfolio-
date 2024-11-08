@@ -4,7 +4,7 @@ import { styles } from "@/styles"
 
 const skillsSet = [
     { skill: "CSS", src: cssLogo },
-    { skill: "Doker", src: dockerLogo },
+    { skill: "Docker", src: dockerLogo },
     { skill: "Figma", src: figmaLogo },
     { skill: "GitHub", src: gitLogo },
     { skill: "HTML", src: htmlLogo },
