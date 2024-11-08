@@ -44,8 +44,8 @@ const Work = () => {
         <section id="work" className="pt-12 bg-background-1">
             <div className={`${styles.paddingX} ${styles.paddingY} flex flex-col items-center text-content`}>
                 <h1 className="text-4xl tracking-wide font-bold">My Experience</h1>
-                <p className="py-4 text-center">Here is a quick summary of my most recent experiences:</p>
-                <div className="w-full grid grid-cols-12 gap-4">
+                <p className="py-4 text-center font-semibold">Here is a quick summary of my most recent experiences:</p>
+                <div className="w-full grid grid-cols-12 gap-6">
                     {workExperince.map((work) => {
                         return (
                             <ExperinceDisplay companyName={work.companyName} companyLogo={work.companyLogo} position={work.position} timePeriod={work.timePeriod} companyColor={work.companyColor}>

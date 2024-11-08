@@ -30,6 +30,9 @@ import metaIcon from "./company/meta.png";
 import shopifyIcon from "./company/shopify.png";
 import starbucksIcon from "./company/starbucks.png";
 import teslaIcon from "./company/tesla.png";
+import blog1 from "./blogpost/blog1.jpg";
+import blog2 from "./blogpost/blog2.jpg";
+import blog3 from "./blogpost/blog3.jpg";
 
 export {
   logo,
@@ -64,4 +67,7 @@ export {
   shopifyIcon,
   starbucksIcon,
   teslaIcon,
+  blog1,
+  blog2,
+  blog3,
 };

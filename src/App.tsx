@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Work from "./pages/Work";
+import Blog from "./pages/Blog";
 
 function App() {
   // const [theme, setTheme] = useState('');
@@ -40,6 +41,7 @@ function App() {
           <Skills />
           <Projects />
           <Work />
+          <Blog />
         </main>
       </BrowserRouter>
     </>
