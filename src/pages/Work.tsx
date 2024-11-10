@@ -48,7 +48,7 @@ const Work = () => {
                 <div className="w-full grid grid-cols-12 gap-6">
                     {workExperince.map((work) => {
                         return (
-                            <ExperinceDisplay companyName={work.companyName} companyLogo={work.companyLogo} position={work.position} timePeriod={work.timePeriod} companyColor={work.companyColor}>
+                            <ExperinceDisplay key={work.companyName} companyName={work.companyName} companyLogo={work.companyLogo} position={work.position} timePeriod={work.timePeriod} companyColor={work.companyColor}>
                                 <p className="">{work.description}</p>
                             </ExperinceDisplay>
                         )

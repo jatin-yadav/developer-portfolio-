@@ -25,7 +25,7 @@ const Skills = () => {
                 <div className="max-w-7xl w-full pt-16 grid grid-cols-12">
                     {skillsSet.map(({ skill, src }) => {
                         return (
-                            <div className="xl:col-span-2 lg:col-span-3 col-span-6 md:p-2 p-1">
+                            <div key={skill } className="xl:col-span-2 lg:col-span-3 col-span-6 md:p-2 p-1">
                                 <SkillsBox skill={skill} imgSrc={src} />
                             </div>
                         )

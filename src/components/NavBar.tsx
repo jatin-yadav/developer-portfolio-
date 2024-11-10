@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { logo, MenuIcon, CloseIcon, moonIcon, sunIcon, twitterIcon, linkedInIcon, githubIcon, leetCodeIcon, emailIcon } from "../assets";
 import { styles } from "../styles";
 import { useRecoilState } from "recoil";
@@ -40,9 +40,18 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [theme, setTheme] = useRecoilState(themesAtom);
-
-
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
+
+
+  useEffect(() => {
+    const section = location.hash.replace('#', '');
+    setActive(section)
+  }, [active, location.hash])
+
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -92,9 +101,9 @@ const Navbar = () => {
                 {navLinks.map((Link) => (
                   <li
                     key={Link.id}
-                    className={`${active === Link.title ? "text-content" : "text-accent-1"
+                    className={`${active === Link.id ? "text-content" : "text-accent-1"
                       }  hover:text-content text-sm font-medium cursor-pointer`}
-                    onClick={() => setActive(Link.title)}
+                    onClick={() => setActive(Link.id)}
                   >
                     <a href={`#${Link.id}`}>{Link.title}</a>
                   </li>
