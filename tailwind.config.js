@@ -28,6 +28,15 @@ export default {
       boxShadow: {
         custom: "0 0.5rem 1rem #000000", // Adding custom shadow
       },
+      keyframes: {
+        bounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+      },
+      animation: {
+        bounce: "bounce 0.3s ease",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

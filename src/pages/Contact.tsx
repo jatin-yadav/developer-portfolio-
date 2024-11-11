@@ -1,9 +1,25 @@
 import { CopyIcon, MailIcon } from '@/assets';
 import { ContactForm } from '@/components/ContactForm';
 import { styles } from '@/styles'
+import { useState } from 'react';
 
 
 const Contact = () => {
+    const myemail = "jatinyadav.dev@gmail.com";
+    const [isBouncing, setIsBouncing] = useState(false);
+
+    const copyText = () => {
+        navigator.clipboard.writeText(myemail)
+            .then(() => {
+                // alert("Mail copied to clipboard!");
+                setIsBouncing(true);
+                setTimeout(() => setIsBouncing(false), 300);
+            })
+            .catch((err) => {
+                console.error("Could not copy mail: ", err);
+            });
+    };
+
 
     return (
         <section id="contact" className="pt-12 bg-background-1">
@@ -17,10 +33,10 @@ const Contact = () => {
                         <span className='px-4'>
                             <MailIcon />
                         </span>
-                        <span className='underline underline-offset-8'>
-                            jatinyadav.dev@gmail.com
+                        <span className={`underline underline-offset-8 ${isBouncing ? 'animate-bounce' : ''}`}>
+                            {myemail}
                         </span>
-                        <span className='px-4'>
+                        <span className='px-4' onClick={copyText}>
                             <CopyIcon />
                         </span>
                     </h1>
