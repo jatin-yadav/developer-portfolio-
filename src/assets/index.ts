@@ -31,6 +31,10 @@ import project3 from "./projects/tripguide.png";
 import metaIcon from "./company/meta.png";
 import shopifyIcon from "./company/shopify.png";
 import starbucksIcon from "./company/starbucks.png";
+import meesra_logo from "./company/meesra_logo.jpeg";
+import bharat_claims_logo from "./company/bharat_claims_logo.jpeg";
+import seniorworld_logo from "./company/seniorworld_logo.jpeg";
+import nora_logo from "./company/nora_logo.jpeg";
 import teslaIcon from "./company/tesla.png";
 import blog1 from "./blogpost/blog1.jpg";
 import blog2 from "./blogpost/blog2.jpg";
@@ -69,6 +73,10 @@ export {
   shopifyIcon,
   starbucksIcon,
   teslaIcon,
+  meesra_logo,
+  bharat_claims_logo,
+  seniorworld_logo,
+  nora_logo,
   blog1,
   blog2,
   blog3,

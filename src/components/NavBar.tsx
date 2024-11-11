@@ -173,11 +173,11 @@ const Navbar = () => {
                   key={Link.id}
                 >
                   <a
-                    className={`${active === Link.title ? "text-content" : "text-accent-1"
+                    className={`${active === Link.id ? "text-content" : "text-accent-1"
                       }  font-poppins font-medium cursor-pointer text-[18px] border-b border-b-secondary w-full flex justify-center items-center py-1`}
                     onClick={() => {
                       setToggle(!toggle);
-                      setActive(Link.title);
+                      setActive(Link.id);
                     }}
                     href={`#${Link.id}`}>{Link.title}</a>
                 </li>
@@ -187,36 +187,35 @@ const Navbar = () => {
               <p>Flow me on social media:</p>
               <div className="flex justify-center items-center gap-4 w-full">
                 <a
-                  href="#_"
+                  href="https://x.com/scriptwithjatin"
                   target="_blank"
                   className={`rounded-full  h-10 w-10 flex justify-center items-center ${theme === "light" ? "bg-secondary" : "bg-primary"}`}
                 >
                   <img src={twitterIcon} alt="icon" height={20} width={20} />
                 </a>
                 <a
-                  href="#_"
+                  href="https://www.linkedin.com/in/scriptwithjatin"
                   target="_blank"
                   className={`rounded-full  h-10 w-10 flex justify-center items-center ${theme === "light" ? "bg-secondary" : "bg-primary"}`}
                 >
                   <img src={linkedInIcon} alt="icon" height={20} width={20} />
                 </a>
                 <a
-                  href="#_"
+                  href="https://github.com/jatin-yadav"
                   target="_blank"
                   className={`rounded-full  h-10 w-10 flex justify-center items-center ${theme === "light" ? "bg-secondary" : "bg-primary"}`}
                 >
                   <img src={githubIcon} alt="icon" height={20} width={20} />
                 </a>
                 <a
-                  href="#_"
+                  href="https://leetcode.com/u/jatin-yadav/"
                   target="_blank"
                   className={`rounded-full  h-10 w-10 flex justify-center items-center ${theme === "light" ? "bg-secondary" : "bg-primary"}`}
                 >
                   <img src={leetCodeIcon} alt="icon" height={20} width={20} />
                 </a>
                 <a
-                  href="#_"
-                  target="_blank"
+                  href="#contact"
                   className={`rounded-full  h-10 w-10 flex justify-center items-center ${theme === "light" ? "bg-secondary" : "bg-primary"}`}
                 >
                   <img src={emailIcon} alt="icon" height={20} width={20} />

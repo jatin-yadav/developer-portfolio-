@@ -1,39 +1,39 @@
-import { metaIcon, shopifyIcon, starbucksIcon, teslaIcon } from "@/assets";
+import { nora_logo, meesra_logo, seniorworld_logo, bharat_claims_logo } from "@/assets";
 import ExperinceDisplay from "@/components/ExperinceDisplay";
 import { styles } from "@/styles"
 
 const workExperince = [
     {
-        companyName: "Shopify",
-        companyLogo: shopifyIcon,
-        companyColor: 'bg-green-500',
-        position: "Software Executive",
-        timePeriod: "May 2024 - Present",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia laudantium at error, autem mollitia iusto perspiciatis laborum libero obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur corporis illo. Excepturi atque omnis sequi deleniti sint odit dolorem explicabo animi, voluptatem assumenda necessitatibus veniam impedit id, iusto eos ratione eum totam quasi aliquam. Earum cupiditate voluptates velit doloremque."
-    },
-    {
-        companyName: "Tesla",
-        companyLogo: teslaIcon,
-        companyColor: 'bg-red-700',
+        companyName: "Meesra",
+        companyLogo: meesra_logo,
+        companyColor: 'bg-blue-700',
         position: "Software Engineer",
-        timePeriod: "Mar 2023 - May 2024",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia laudantium at error, autem mollitia iusto perspiciatis laborum libero obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur corporis illo. Excepturi atque omnis sequi deleniti sint odit dolorem explicabo animi, voluptatem assumenda necessitatibus veniam impedit id, iusto eos ratione eum totam quasi aliquam. Earum cupiditate voluptates velit doloremque."
+        timePeriod: "Mar 2024 - Present",
+        description: 'As a Software Engineer, I developed responsive, user-centric web interfaces using Next.js, optimized applications for speed, and ensured high-quality graphics and branding. Developed back-end and implemented solutions based on user feedback and done with back-end coding in Node.js and Laravel. Additionally, I managed both SQL and NoSQL databases, created functional documentation, and stayed updated with emerging technologies, contributing to innovative design and development strategies across projects.'
     },
     {
-        companyName: "Starbucks",
-        companyLogo: starbucksIcon,
-        companyColor: 'bg-green-800',
-        position: "Prodec Manager",
-        timePeriod: "Oct 2022 - Mar 2023",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia laudantium at error, autem mollitia iusto perspiciatis laborum libero obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur corporis illo. Excepturi atque omnis sequi deleniti sint odit dolorem explicabo animi, voluptatem assumenda necessitatibus veniam impedit id, iusto eos ratione eum totam quasi aliquam. Earum cupiditate voluptates velit doloremque."
+        companyName: "Bharat Claims",
+        companyLogo: bharat_claims_logo,
+        companyColor: 'bg-orange-700',
+        position: " Software Development Executive",
+        timePeriod: "May 2022 - Dec 2023",
+        description: "I utilized React, Node.js, and Express.js to build dynamic, responsive web applications, focusing on clean, efficient code to boost site responsiveness and user experience. I identified and fixed key bugs, optimized existing features, and ultimately improved performance by 40%. These enhancements ensured a smoother user interaction, aligning with high standards of speed and efficiency across the platform."
     },
     {
-        companyName: "Facebook",
-        companyLogo: metaIcon,
-        companyColor: 'bg-blue-600',
+        companyName: " Senior World",
+        companyLogo: seniorworld_logo,
+        companyColor: 'bg-red-800',
+        position: " Software Developer",
+        timePeriod: "Oct 2021 - Apr 2022",
+        description: "As a dedicated web developer, I managed website maintenance, focusing on delivering a seamless performance for a highly engaging experience. Leveraging third-party APIs, I facilitated large-scale SMS communication to keep customers updated efficiently. With a strong eye for detail, I proactively diagnosed and resolved software bugs, continuously enhancing existing codebases. This approach not only improved functionality but also ensured high reliability and usability, making the website more responsive to customer needs and expectations."
+    },
+    {
+        companyName: "Nora Tech",
+        companyLogo: nora_logo,
+        companyColor: 'bg-blue-900',
         position: "Software Engineer",
-        timePeriod: "Jun 2020 - Oct 2022",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia laudantium at error, autem mollitia iusto perspiciatis laborum libero obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur corporis illo. Excepturi atque omnis sequi deleniti sint odit dolorem explicabo animi, voluptatem assumenda necessitatibus veniam impedit id, iusto eos ratione eum totam quasi aliquam. Earum cupiditate voluptates velit doloremque."
+        timePeriod: "Apr 2020 - Jul 2020",
+        description: "As a dedicated web developer, I managed website maintenance, focusing on delivering a seamless performance for a highly engaging experience. Leveraging third-party APIs, I facilitated large-scale SMS communication to keep customers updated efficiently. With a strong eye for detail, I proactively diagnosed and resolved software bugs, continuously enhancing existing codebases. This approach not only improved functionality but also ensured high reliability and usability, making the website more responsive to customer needs and expectations."
     }
 
 ]
@@ -49,7 +49,7 @@ const Work = () => {
                     {workExperince.map((work) => {
                         return (
                             <ExperinceDisplay key={work.companyName} companyName={work.companyName} companyLogo={work.companyLogo} position={work.position} timePeriod={work.timePeriod} companyColor={work.companyColor}>
-                                <p className="">{work.description}</p>
+                                <p className="text-accent-2">{work.description}</p>
                             </ExperinceDisplay>
                         )
                     })}

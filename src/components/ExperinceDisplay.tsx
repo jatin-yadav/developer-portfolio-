@@ -14,7 +14,7 @@ const ExperinceDisplay = ({ companyName, companyLogo, companyColor, children, po
         <h1 className="pt-2 text-2xl font-bold text-center">
           {position}
         </h1>
-        <h2 className="text-lg font-semibold text-center">
+        <h2 className="text-lg font-medium text-center">
           {timePeriod}
         </h2>
         <div className="my-5 text-center">
