@@ -16,16 +16,18 @@
   --color-primary: 0deg 0% 0%;
   --color-secondary: 0deg 0% 67%;
   --color-accent1: 0deg 0% 58%;
+  --color-accent2: 0deg 0% 20%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-text: 0deg 0% 100%;
     --color-background1: 0deg 0% 7%;
-  --color-background2: 0deg 0% 0%;
+    --color-background2: 0deg 0% 0%;
     --color-primary: 0deg 0% 100%;
     --color-secondary: 0deg 0% 33%;
     --color-accent1: 0deg 0% 42%;
+    --color-accent2: 0deg 0% 65%;
   }
 }
 
@@ -36,6 +38,7 @@
   --color-primary: 0deg 0% 0%;
   --color-secondary: 0deg 0% 67%;
   --color-accent1: 0deg 0% 58%;
+  --color-accent2: 0deg 0% 20%;
 }
 
 .dark {
@@ -45,6 +48,7 @@
   --color-primary: 0deg 0% 100%;
   --color-secondary: 0deg 0% 33%;
   --color-accent1: 0deg 0% 42%;
+  --color-accent2: 0deg 0% 65%;
 }
 
 @layer base {

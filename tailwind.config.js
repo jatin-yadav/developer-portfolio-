@@ -7,6 +7,7 @@ export default {
       colors: {
         accent: {
           1: "hsl(var(--color-accent1) / <alpha-value>)",
+          2: "hsl(var(--color-accent2) / <alpha-value>)",
         },
         background: {
           1: "hsl(var(--color-background1) / <alpha-value>)",

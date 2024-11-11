@@ -12,19 +12,19 @@ const Footer = () => {
                 <div className='py-4'>
                     <p>You may also find me on these platforms!</p>
                     <div className="py-4 flex justify-center items-center gap-4 w-full">
-                        <a href="#_" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
+                        <a href="https://x.com/scriptwithjatin" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
                             <img src={twitterIcon} alt='icon' height={20} width={20} />
                         </a>
-                        <a href="#_" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
+                        <a href="https://www.linkedin.com/in/scriptwithjatin" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
                             <img src={linkedInIcon} alt='icon' height={20} width={20} />
                         </a>
-                        <a href="#_" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
+                        <a href="https://github.com/jatin-yadav" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
                             <img src={githubIcon} alt='icon' height={20} width={20} />
                         </a>
-                        <a href="#_" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
+                        <a href="https://leetcode.com/u/jatin-yadav/" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
                             <img src={leetCodeIcon} alt='icon' height={20} width={20} />
                         </a>
-                        <a href="#_" target="_blank" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
+                        <a href="#contact" className={`border-2 ${theme === "dark" ? "bg-primary border-background-1" : "border-primary"} rounded-full  h-10 w-10 flex justify-center items-center`}>
                             <img src={emailIcon} alt='icon' height={20} width={20} />
                         </a>
                     </div>
