@@ -39,6 +39,9 @@ import teslaIcon from "./company/tesla.png";
 import blog1 from "./blogpost/blog1.jpg";
 import blog2 from "./blogpost/blog2.jpg";
 import blog3 from "./blogpost/blog3.jpg";
+import secure from "./blogpost/secure.jpg";
+import debouncing from "./blogpost/debouncing.png";
+import unit_testing from "./blogpost/unit_testing.jpeg";
 
 export {
   logo,
@@ -80,6 +83,9 @@ export {
   blog1,
   blog2,
   blog3,
+  secure,
+  debouncing,
+  unit_testing,
   MailIcon,
   CopyIcon,
 };

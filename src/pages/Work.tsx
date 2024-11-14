@@ -9,7 +9,7 @@ const workExperince = [
         companyColor: 'bg-blue-700',
         position: "Software Engineer",
         timePeriod: "Mar 2024 - Present",
-        description: 'As a Software Engineer, I developed responsive, user-centric web interfaces using Next.js, optimized applications for speed, and ensured high-quality graphics and branding. Developed back-end and implemented solutions based on user feedback and done with back-end coding in Node.js and Laravel. Additionally, I managed both SQL and NoSQL databases, created functional documentation, and stayed updated with emerging technologies, contributing to innovative design and development strategies across projects.'
+        description: 'Conducted performance testing to ensure system stability under load, achieving a 30% improvement in response time. Led end-to-end web development, cutting development time by 25% with optimized workflows. Implemented a streamlined digital process flow for efficient policy issuance and management, enhancing user experience and boosting operational efficiency by 50%. Collaborated with UI/UX designers to optimize user interfaces, improving customer engagement by 40%'
     },
     {
         companyName: "Bharat Claims",
@@ -17,7 +17,7 @@ const workExperince = [
         companyColor: 'bg-orange-700',
         position: " Software Development Executive",
         timePeriod: "May 2022 - Dec 2023",
-        description: "I utilized React, Node.js, and Express.js to build dynamic, responsive web applications, focusing on clean, efficient code to boost site responsiveness and user experience. I identified and fixed key bugs, optimized existing features, and ultimately improved performance by 40%. These enhancements ensured a smoother user interaction, aligning with high standards of speed and efficiency across the platform."
+        description: " Created a secure .exe application with embedded website access and password protection, boosting data security and contributing to a 20% increase in company sales. Maintained PHP CodeIgniter backend for a garage management app, reducing downtime by 15% and ensuring consistent operation. Developed the backend using ExpressJS to enhance battery management and sales tracking for distributors, reducing stock check and tracking time by 50%. Optimized client-side JavaScript, cutting JS bundle size by 25% and decreasing page load time by 40% for faster performance."
     },
     {
         companyName: " Senior World",
@@ -25,7 +25,7 @@ const workExperince = [
         companyColor: 'bg-red-800',
         position: " Software Developer",
         timePeriod: "Oct 2021 - Apr 2022",
-        description: "As a dedicated web developer, I managed website maintenance, focusing on delivering a seamless performance for a highly engaging experience. Leveraging third-party APIs, I facilitated large-scale SMS communication to keep customers updated efficiently. With a strong eye for detail, I proactively diagnosed and resolved software bugs, continuously enhancing existing codebases. This approach not only improved functionality but also ensured high reliability and usability, making the website more responsive to customer needs and expectations."
+        description: " Improved the codebase and enhanced comments for better readability & maintainability, reducing code comprehension by 50% for others. Managed bulk messaging via third-party API, achieving a 98% delivery success rate for customer notifications. Performed thorough user testing on mobile applications, identifying and reporting critical bugs, which reduced post-release issues by 20% and improved app stability"
     },
     {
         companyName: "Nora Tech",

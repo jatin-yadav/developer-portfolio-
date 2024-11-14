@@ -1,22 +1,25 @@
-import { blog1, blog2, blog3 } from "@/assets";
+import { secure, debouncing, unit_testing } from "@/assets";
 import BlogPost from "@/components/BlogPost";
 import { styles } from "@/styles"
 
 const blogs = [
     {
-        blogTitle: "Design is not just what it looks like",
-        blogImg: blog1,
-        blogContent: "Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimveni...Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo assumenda odio quisquam, iste, minima ad, labore corporis qui at nobis adipisci sed inventore similique possimus. Ducimus ipsa facere voluptatem. Perspiciatis?"
+        blogTitle: "Keeping User Sessions Safe",
+        blogImg: secure,
+        blogLink: "https://medium.com/@jatinyadav.dev/keeping-user-sessions-safe-a-guide-to-access-and-refresh-tokens-in-web-authentication-d287967c0bd8",
+        blogContent: "In modern web authentication, access and refresh tokens are essential tools for maintaining secure user sessions. Access tokens are short-lived and issued to grant users quick access to resources without the need to reauthenticate. However, once they expire, users would need to log in again—this is where refresh tokens come in. Refresh tokens are longer-lived and securely stored, allowing users to obtain new access tokens without re-entering credentials, thus extending their session seamlessly. This combination helps maintain security while balancing user experience..."
     },
     {
-        blogTitle: "Corporate Branding on finger Tips",
-        blogImg: blog2,
-        blogContent: "Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimveni...Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo assumenda odio quisquam, iste, minima ad, labore corporis qui at nobis adipisci sed inventore similique possimus. Ducimus ipsa facere voluptatem. Perspiciatis?"
+        blogTitle: "Debouncing:Explanation & Implementation",
+        blogImg: debouncing,
+        blogLink: "https://medium.com/@griffinmichl/implementing-debounce-in-javascript-eab51a12311e",
+        blogContent: "Debouncing is a technique that improves performance by limiting the rate at which a function is executed, especially for functions triggered by frequent user interactions. In React, debouncing can be very useful in scenarios like handling input changes in forms, search bars, or any component that listens for frequent, rapid updates.By implementing debouncing, we ensure that a function only executes after the user has stopped interacting for a specified delay, enhancing the user experience."
     },
     {
-        blogTitle: "Beautiful Place for Journey",
-        blogImg: blog3,
-        blogContent: "Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem faenimveni...Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo assumenda odio quisquam, iste, minima ad, labore corporis qui at nobis adipisci sed inventore similique possimus. Ducimus ipsa facere voluptatem. Perspiciatis?"
+        blogTitle: "Clean Code With Unit Tests",
+        blogImg: unit_testing,
+        blogLink: "https://betterprogramming.pub/clean-code-with-unit-tests-5f28020828a5",
+        blogContent: "Unit tests are important. They prevent regressions as you refactor code, serve as documentation, and save you hours of time not spent doing tedious manual testing. In short, tests enable change.But how much attention to cleanliness do we give our tests? We refactor our app’s production code, give descriptive names to variables, extract methods for repeatable functionality, and make our code easy to reason about. But do we do the same for our tests?"
     },
 ]
 

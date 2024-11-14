@@ -4,6 +4,7 @@ const BlogPost = ({ isFlexed, blogItem }: {
     isFlexed: boolean, blogItem: {
         blogTitle: string,
         blogImg: string,
+        blogLink: string,
         blogContent: string
     }
 }) => {
@@ -19,7 +20,7 @@ const BlogPost = ({ isFlexed, blogItem }: {
                     </h2>
                     <p className="text-center text-accent-1 hover:text-content">{blogItem.blogContent}</p>
                     <div className="flex justify-between items-baseline pt-2 text-sm text-accent-1">
-                        <p className="hover:text-content cursor-pointer">READ MORE</p>
+                        <a href={blogItem.blogLink} target="_blank" className="hover:text-content cursor-pointer">READ MORE</a>
                         <div className="hover:text-content cursor-pointer flex gap-1">
                             <a href="#_" target="_blank" className={`border-2 border-primary bg-accent-1 rounded-full  h-7 w-7 flex justify-center items-center`}>
                                 <img src={twitterIcon} alt='icon' height={20} width={20} />
@@ -44,7 +45,7 @@ const BlogPost = ({ isFlexed, blogItem }: {
                 </h2>
                 <p className="text-center text-accent-1 hover:text-content">{blogItem.blogContent}</p>
                 <div className="flex justify-between items-baseline pt-2 text-sm text-accent-1">
-                    <p className="hover:text-content cursor-pointer">READ MORE</p>
+                    <a href={blogItem.blogLink} target="_blank" className="hover:text-content cursor-pointer">READ MORE</a>
                     <div className="hover:text-content cursor-pointer flex gap-1">
                         <a href="#_" target="_blank" className={`border-2 border-primary bg-accent-1 rounded-full  h-7 w-7 flex justify-center items-center`}>
                             <img src={twitterIcon} alt='icon' height={20} width={20} />
