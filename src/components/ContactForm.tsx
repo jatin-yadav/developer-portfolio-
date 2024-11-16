@@ -1,5 +1,3 @@
-"use client"
-
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -16,6 +14,11 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "./ui/textarea"
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const YOUR_PUBLIC_KEY = import.meta.env.VITE_YOUR_PUBLIC_KEY;
 
 const FormSchema = z.object({
     username: z.string().min(2, {
@@ -41,15 +44,28 @@ export function ContactForm() {
         },
     })
 
-    function onSubmit(data: z.infer<typeof FormSchema>) {
-        toast({
-            title: "You submitted the following values:",
-            description: (
-                <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-                    <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-                </pre>
-            ),
-        })
+    const { reset } = form;
+    const sendEmail = (data: z.infer<typeof FormSchema>) => {
+        emailjs
+            .send(SERVICE_ID, TEMPLATE_ID, data, {
+                publicKey: YOUR_PUBLIC_KEY,
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    toast({
+                        description: "Your message has been sent.",
+                    })
+                    reset();
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    }
+
+    async function onSubmit(data: z.infer<typeof FormSchema>) {
+        await sendEmail(data);
     }
 
     return (
