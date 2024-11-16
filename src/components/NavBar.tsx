@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { logo, MenuIcon, CloseIcon, moonIcon, sunIcon, twitterIcon, linkedInIcon, githubIcon, leetCodeIcon, emailIcon } from "../assets";
+import { logo, MenuIcon, CloseIcon, moonIcon, sunIcon, twitterIcon, linkedInIcon, githubIcon, leetCodeIcon, emailIcon, resumeLink } from "../assets";
 import { styles } from "../styles";
 import { useRecoilState } from "recoil";
 import { themesAtom } from "../store/atoms/themesAtom";
@@ -29,10 +29,6 @@ const navLinks = [
   {
     id: "contact",
     title: "Contact",
-  },
-  {
-    id: "resume",
-    title: "Resume",
   },
 ];
 
@@ -108,6 +104,13 @@ const Navbar = () => {
                     <a href={`#${Link.id}`}>{Link.title}</a>
                   </li>
                 ))}
+                <li
+                  className={`${active === 'resume' ? "text-content" : "text-accent-1"
+                    }  hover:text-content text-sm font-medium cursor-pointer`}
+                  onClick={() => setActive('resume')}
+                >
+                  <a href={resumeLink} target="_blank">Resume</a>
+                </li>
                 <li className={`cursor-pointer`}>
                   <img
                     src={theme === "light" ? moonIcon : sunIcon}
@@ -182,6 +185,16 @@ const Navbar = () => {
                     href={`#${Link.id}`}>{Link.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  className={`${active === 'resume' ? "text-content" : "text-accent-1"
+                    }  font-poppins font-medium cursor-pointer text-[18px] border-b border-b-secondary w-full flex justify-center items-center py-1`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive('resume');
+                  }}
+                  href={resumeLink} target="_blank" >Resume</a>
+              </li>
             </ul>
             <div className="absolute bottom-[20px] flex flex-col gap-4 justify-center items-center w-full text-content">
               <p>Flow me on social media:</p>

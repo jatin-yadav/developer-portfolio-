@@ -24,14 +24,18 @@ const About = () => {
                         <p className="py-2 text-pretty">With a solid foundation in <span className="font-semibold text-content">JavaScript, TypeScript, Next.js, Tailwind CSS,</span> and database management using both <span className="font-semibold text-content">SQL & NoSQL</span> databases, I have continued to grow and evolve as a developer, embracing new challenges and learning the latest technologies along the way. I’m always looking for opportunities to contribute to innovative projects that drive technological advancement. I am very much a progressive thinker and enjoy working on products end-to-end—from ideation through to development.<span className="font-semibold text-content"> My work is driven by a passion for clean code, enhanced user experiences, and technical excellence.</span></p>
                         <p>
                             You can follow me on social media, where I share tech-related insights.
-                            <ul>Finally, some quick bits about me.</ul>
+                            <br />Finally, some quick bits about me.
                             <li>B.Tech - in Computer Science & Engineering</li>
                             <li>Avid learner</li>
                             Feel free to reach out and say hello—I’m as friendly as a well-commented codebase!
                         </p>
                         <div className="flex gap-4 py-6">
-                            <Button>Hire Me</Button>
-                            <Button variant={"outline"}>Download CV</Button>
+                            <a href='#contact'>
+                                <Button>Hire Me</Button>
+                            </a>
+                            <a href='https://drive.google.com/file/d/1evDWQ55y16c1El88qHppiZI8G24cMIKj/view?usp=sharing' target="_blank">
+                                <Button variant={"outline"}>Download CV</Button>
+                            </a>
                         </div>
                     </div>
                 </div>

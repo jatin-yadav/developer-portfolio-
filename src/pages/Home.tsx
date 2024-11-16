@@ -1,4 +1,4 @@
-import { twitterIcon, linkedInIcon, githubIcon, leetCodeIcon, emailIcon } from "../assets";
+import { twitterIcon, linkedInIcon, githubIcon, leetCodeIcon, emailIcon, resumeLink } from "../assets";
 import { useRecoilValue } from "recoil";
 import { themesAtom } from "../store/atoms/themesAtom";
 import RunningText from "../components/RunningText";
@@ -30,7 +30,7 @@ const Home = () => {
                 <div className="mx-5 text-foreground font-semibold">VISIONARY</div>
               </div>
               <div className="pt-20">
-                <a href='/src/assets/docs/Jatin-cv.pdf' download>
+                <a href={resumeLink} target="_blank">
                   <Button>Download CV</Button>
                 </a>
               </div>

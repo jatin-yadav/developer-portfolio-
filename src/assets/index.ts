@@ -28,6 +28,9 @@ import typescriptLogo from "./tech/typescript.png";
 import project1 from "./projects/carrent.png";
 import project2 from "./projects/jobit.png";
 import project3 from "./projects/tripguide.png";
+import planto from "./projects/planto.png";
+import elite_estate from "./projects/elite_estate.png";
+import dallecloud from "./projects/dallecloud.png";
 import metaIcon from "./company/meta.png";
 import shopifyIcon from "./company/shopify.png";
 import starbucksIcon from "./company/starbucks.png";
@@ -42,6 +45,8 @@ import blog3 from "./blogpost/blog3.jpg";
 import secure from "./blogpost/secure.jpg";
 import debouncing from "./blogpost/debouncing.png";
 import unit_testing from "./blogpost/unit_testing.jpeg";
+const resumeLink =
+  "https://drive.google.com/file/d/1CBMYVB0qJKsnQ-sSUjsnXsZsCh9qDStY/view?usp=sharing";
 
 export {
   logo,
@@ -70,6 +75,9 @@ export {
   project1,
   project2,
   project3,
+  planto,
+  elite_estate,
+  dallecloud,
   ShareIcon,
   GithubIcon,
   metaIcon,
@@ -88,4 +96,5 @@ export {
   unit_testing,
   MailIcon,
   CopyIcon,
+  resumeLink,
 };
