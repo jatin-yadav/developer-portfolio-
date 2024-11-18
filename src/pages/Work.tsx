@@ -49,7 +49,7 @@ const Work = () => {
                     {workExperince.map((work) => {
                         return (
                             <ExperinceDisplay key={work.companyName} companyName={work.companyName} companyLogo={work.companyLogo} position={work.position} timePeriod={work.timePeriod} companyColor={work.companyColor}>
-                                <p className="text-accent-2">{work.description}</p>
+                                <p className="text-accent-2 text-justify">{work.description}</p>
                             </ExperinceDisplay>
                         )
                     })}

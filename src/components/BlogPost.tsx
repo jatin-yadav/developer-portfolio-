@@ -18,7 +18,7 @@ const BlogPost = ({ isFlexed, blogItem }: {
                     <h2 className="text-xl font-bold text-center">
                         {blogItem.blogTitle}
                     </h2>
-                    <p className="text-center text-accent-1 hover:text-content">{blogItem.blogContent}</p>
+                    <p className="text-justify text-accent-1 hover:text-content">{blogItem.blogContent}</p>
                     <div className="flex justify-between items-baseline pt-2 text-sm text-accent-1">
                         <a href={blogItem.blogLink} target="_blank" className="hover:text-content cursor-pointer">READ MORE</a>
                         <div className="hover:text-content cursor-pointer flex gap-1">
@@ -43,7 +43,7 @@ const BlogPost = ({ isFlexed, blogItem }: {
                 <h2 className="text-xl font-bold text-center">
                     {blogItem.blogTitle}
                 </h2>
-                <p className="text-center text-accent-1 hover:text-content">{blogItem.blogContent}</p>
+                <p className="text-justify text-accent-1 hover:text-content">{blogItem.blogContent}</p>
                 <div className="flex justify-between items-baseline pt-2 text-sm text-accent-1">
                     <a href={blogItem.blogLink} target="_blank" className="hover:text-content cursor-pointer">READ MORE</a>
                     <div className="hover:text-content cursor-pointer flex gap-1">
