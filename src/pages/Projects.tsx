@@ -6,8 +6,8 @@ const projectList = [
     {
         projectName: "Planto: Breath Natural",
         isReversed: false,
-        livelink: "",
-        githublink: "https://github.com/jatin-yadav",
+        livelink: "https://plantoecom.vercel.app/",
+        githublink: "https://github.com/jatin-yadav/planto",
         img: planto,
         desc: "The purpose of this project is to create an engaging and user-friendly e-commerce platform dedicated to selling plants and promoting a natural lifestyle. The website, named Planto, is designed to cater to individuals passionate about greenery, interior decor, or sustainable living. It combines modern design principles with a nature-inspired aesthetic to create an inviting digital experience.",
         skills: [
