@@ -45,6 +45,7 @@ import blog3 from "./blogpost/blog3.jpg";
 import secure from "./blogpost/secure.jpg";
 import debouncing from "./blogpost/debouncing.png";
 import unit_testing from "./blogpost/unit_testing.jpeg";
+import monorepoimg from "./blogpost/monorepoimg.jpeg";
 const resumeLink =
   "https://drive.google.com/file/d/1CBMYVB0qJKsnQ-sSUjsnXsZsCh9qDStY/view?usp=sharing";
 
@@ -97,4 +98,5 @@ export {
   MailIcon,
   CopyIcon,
   resumeLink,
+  monorepoimg,
 };

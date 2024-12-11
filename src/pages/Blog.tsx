@@ -1,4 +1,4 @@
-import { secure, debouncing, unit_testing } from "@/assets";
+import { secure, debouncing, monorepoimg } from "@/assets";
 import BlogPost from "@/components/BlogPost";
 import { styles } from "@/styles"
 
@@ -16,10 +16,10 @@ const blogs = [
         blogContent: "Debouncing is a technique that improves performance by limiting the rate at which a function is executed, especially for functions triggered by frequent user interactions. In React, debouncing can be very useful in scenarios like handling input changes in forms, search bars, or any component that listens for frequent, rapid updates.By implementing debouncing, we ensure that a function only executes after the user has stopped interacting for a specified delay, enhancing the user experience."
     },
     {
-        blogTitle: "Clean Code With Unit Tests",
-        blogImg: unit_testing,
-        blogLink: "https://betterprogramming.pub/clean-code-with-unit-tests-5f28020828a5",
-        blogContent: "Unit tests are important. They prevent regressions as you refactor code, serve as documentation, and save you hours of time not spent doing tedious manual testing. In short, tests enable change.But how much attention to cleanliness do we give our tests? We refactor our app’s production code, give descriptive names to variables, extract methods for repeatable functionality, and make our code easy to reason about. But do we do the same for our tests?"
+        blogTitle: "Monorepos: A Comprehensive Guide",
+        blogImg: monorepoimg,
+        blogLink: "https://medium.com/@jatinyadav.dev/understanding-monorepos-a-comprehensive-guide-9b774a037b10",
+        blogContent: "In software development, teams often face a key architectural decision: how to organize and manage codebases. One approach that has gained popularity among developers is the monorepo. Let’s break it down. A monorepo (short for “monolithic repository”) is a single version-controlled repository that houses multiple projects or components all maintained together within the same repository."
     },
 ]
 
