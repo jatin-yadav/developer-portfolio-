@@ -1,14 +1,22 @@
-import { nora_logo, meesra_logo, seniorworld_logo, bharat_claims_logo } from "@/assets";
+import { nora_logo, meesra_logo, seniorworld_logo, bharat_claims_logo, fxisai } from "@/assets";
 import ExperinceDisplay from "@/components/ExperinceDisplay";
 import { styles } from "@/styles"
 
 const workExperince = [
     {
+        companyName: "Fxis.ai",
+        companyLogo: fxisai,
+        companyColor: 'bg-[#5928d1]',
+        position: "Fullstack Developer",
+        timePeriod: "Jan 2025 - Present",
+        description: "Developing a high-performance blockchain explorer with React.js using Typescript, optimizing real-time transaction visualization. Implemented live updates, enhancing data accuracy and responsiveness. Optimized rendering and state management with TanStack Query for efficient data fetching and caching.Designed an intuitive UI with Tailwind CSS and shadcn/ui, ensuring a seamless and modern blockchain data exploration experience."
+    },
+    {
         companyName: "Meesra",
         companyLogo: meesra_logo,
         companyColor: 'bg-blue-700',
         position: "Software Engineer",
-        timePeriod: "Mar 2024 - Present",
+        timePeriod: "Mar 2024 - Oct 2024",
         description: 'Conducted performance testing to ensure system stability under load, achieving a 30% improvement in response time. Led end-to-end web development, cutting development time by 25% with optimized workflows. Implemented a streamlined digital process flow for efficient policy issuance and management, enhancing user experience and boosting operational efficiency by 50%. Collaborated with UI/UX designers to optimize user interfaces, improving customer engagement by 40%'
     },
     {
@@ -16,7 +24,7 @@ const workExperince = [
         companyLogo: bharat_claims_logo,
         companyColor: 'bg-orange-700',
         position: " Software Development Executive",
-        timePeriod: "May 2022 - Dec 2023",
+        timePeriod: "May 2022 - Feb 2024",
         description: " Created a secure .exe application with embedded website access and password protection, boosting data security and contributing to a 20% increase in company sales. Maintained PHP CodeIgniter backend for a garage management app, reducing downtime by 15% and ensuring consistent operation. Developed the backend using ExpressJS to enhance battery management and sales tracking for distributors, reducing stock check and tracking time by 50%. Optimized client-side JavaScript, cutting JS bundle size by 25% and decreasing page load time by 40% for faster performance."
     },
     {

@@ -39,6 +39,7 @@ import bharat_claims_logo from "./company/bharat_claims_logo.jpeg";
 import seniorworld_logo from "./company/seniorworld_logo.jpeg";
 import nora_logo from "./company/nora_logo.jpeg";
 import teslaIcon from "./company/tesla.png";
+import fxisai from "./company/fx-logo.png";
 import blog1 from "./blogpost/blog1.jpg";
 import blog2 from "./blogpost/blog2.jpg";
 import blog3 from "./blogpost/blog3.jpg";
@@ -99,4 +100,5 @@ export {
   CopyIcon,
   resumeLink,
   monorepoimg,
+  fxisai
 };
